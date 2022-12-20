@@ -1,0 +1,17 @@
+#header {
+}
+#content {
+  background-color: var(--white-color);
+  padding: 100px 50px;
+  .content-heading {
+    color: var(--primary-color);
+    text-align: center;
+  }
+  .content-desc {
+    color: var(--black-color);
+    opacity: 0.8;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+}

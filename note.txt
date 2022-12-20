@@ -1,0 +1,2 @@
+create component button
+create component news item
