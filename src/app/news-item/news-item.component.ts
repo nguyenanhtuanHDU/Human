@@ -6,5 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./news-item.component.scss'],
 })
 export class NewsItemComponent {
-  constructor() {}
+  @Input() newsImg = '';
+  @Input() newsHeading = '';
+  @Input() newsDesc = '';
 }

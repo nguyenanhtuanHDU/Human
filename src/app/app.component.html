@@ -1,19 +1,21 @@
-<div class="wrapper" ng-init="getHeadBg">
-  <!-- begin head -->
-  <div id="header">
-    <img src="{{headBg}}" alt="">
-  </div>
-  <!-- end head -->
+<div class="wrapper">
 
-  <!-- begin body -->
+  <app-header></app-header>
+
   <div id="content">
     <h1 class="content-heading">HUMAN RIGHTS FOR ALL</h1>
     <p class="content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
       labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+    <div class="news-list">
+      <app-news-item *ngFor="let news of newsList" [newsImg]="news.image" [newsHeading]="news.heading"
+        [newsDesc]="news.desc"></app-news-item>
+    </div>
+    <div class="news-footer">
+      <p class="content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut
+        labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+      <app-button [title]="'Join Us'" [className]="'medium'"></app-button>
+    </div>
   </div>
-  <!-- end body -->
 
-  <!-- begin footer -->
-  <div id="footer"></div>
-  <!-- end footer -->
 </div>
