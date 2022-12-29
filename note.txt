@@ -1,2 +1,2 @@
-- font-size desc news-footer
 - add animation loading
+- responsive news

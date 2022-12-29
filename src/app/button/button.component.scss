@@ -3,10 +3,19 @@ button {
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
   border-radius: 888px;
-  color: white;
+  color: var(--white-color);
   padding: 10px 30px;
   font-weight: 500;
+  transition: 0.3s ease;
+}
+button:hover {
+  opacity: 0.7;
 }
 .medium {
   padding: 10px 85px;
+}
+
+div {
+  display: flex;
+  align-items: center;
 }
