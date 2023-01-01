@@ -4,7 +4,8 @@ button {
   background-color: var(--primary-color);
   border-radius: 888px;
   color: var(--white-color);
-  padding: 10px 30px;
+  padding: 15px 37px;
+  font-size: 18px;
   font-weight: 500;
   transition: 0.3s ease;
 }
@@ -12,7 +13,8 @@ button:hover {
   opacity: 0.7;
 }
 .medium {
-  padding: 10px 85px;
+  padding: 15px 111px;
+  font-size: 18px;
 }
 
 div {
