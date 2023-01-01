@@ -1,2 +1,2 @@
 - add animation loading
-- responsive news
+- read news
