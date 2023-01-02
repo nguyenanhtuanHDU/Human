@@ -9,4 +9,5 @@ export class NewsItemComponent {
   @Input() newsImg = '';
   @Input() newsHeading = '';
   @Input() newsDesc = '';
+  @Input() href = '';
 }

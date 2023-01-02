@@ -1,2 +1,2 @@
-<app-news-item *ngFor="let news of newsList" [newsImg]="news.image" [newsHeading]="news.heading"
-  [newsDesc]="news.desc"></app-news-item>
+<app-news-item *ngFor="let news of newsList" [newsImg]="news.image" [newsHeading]="news.heading" [newsDesc]="news.desc"
+  href="/posts/{{news.id}}"></app-news-item>
