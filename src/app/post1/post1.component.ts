@@ -7,9 +7,19 @@ import { NewsService } from '../news.service';
   styleUrls: ['./post1.component.scss'],
 })
 export class Post1Component {
-  data = [];
+  data: any;
+  image: any;
+  heading: any;
+  desc: any;
   constructor(private newsService: NewsService) {}
   ngOnInit(): void {
-    this.newsService.getNews().subscribe((data) => {});
+    this.newsService.getNews().subscribe((data) => {
+      if (Array.isArray(data)) {
+        this.data = data[0];
+        this.image = this.data.image;
+        this.heading = this.data.heading;
+        this.desc = this.data.desc;
+      }
+    });
   }
 }

@@ -8,11 +8,18 @@ import { NewsService } from '../news.service';
 })
 export class Post3Component {
   data: any;
+  image: any;
+  heading: any;
+  desc: any;
   constructor(private newsService: NewsService) {}
   ngOnInit(): void {
     this.newsService.getNews().subscribe((data) => {
-      this.data = data;
-      console.log('>>>>  this.data', this.data);
+      if (Array.isArray(data)) {
+        this.data = data[2];
+        this.image = this.data.image;
+        this.heading = this.data.heading;
+        this.desc = this.data.desc;
+      }
     });
   }
 }
