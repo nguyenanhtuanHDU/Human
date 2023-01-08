@@ -11,6 +11,7 @@ export class Post2Component {
   image: any;
   heading: any;
   desc: any;
+  loadingStatus = '';
   constructor(private newsService: NewsService) {}
   ngOnInit(): void {
     this.newsService.getNews().subscribe((data) => {
@@ -20,6 +21,7 @@ export class Post2Component {
         this.heading = this.data.heading;
         this.desc = this.data.desc;
       }
+      this.loadingStatus = 'hidden';
     });
   }
 }

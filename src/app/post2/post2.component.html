@@ -3,13 +3,17 @@
     <div class="img-wrapper col-md-12 col-lg-6">
       <div class="img">
         <img [src]="image" alt="">
+        <app-loading [toggle]="loadingStatus"></app-loading>
       </div>
     </div>
     <div class="content col-md-12 col-lg-6">
       <h1 class="heading">
         {{heading}}
+        <app-loading [toggle]="loadingStatus"></app-loading>
       </h1>
-      <p class="desc">{{desc}}</p>
+      <p class="desc">{{desc}}
+        <app-loading [toggle]="loadingStatus"></app-loading>
+      </p>
       <div class="title">
         <p>&nbsp;&nbsp;&nbsp; Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis minima facere
           voluptate et
