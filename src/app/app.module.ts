@@ -12,9 +12,8 @@ import { ButtonComponent } from './button/button.component';
 import { NewsListComponent } from './news-list/news-list.component';
 import { HomeComponent } from './home/home.component';
 import { Post1Component } from './post1/post1.component';
-import { Post2Component } from './post2/post2.component';
-import { Post3Component } from './post3/post3.component';
 import { LoadingComponent } from './loading/loading.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
@@ -25,10 +24,8 @@ import { LoadingComponent } from './loading/loading.component';
     ButtonComponent,
     NewsListComponent,
     HomeComponent,
-    Post1Component,
-    Post2Component,
-    Post3Component,
     LoadingComponent,
+    PostComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],

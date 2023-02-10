@@ -10,7 +10,7 @@ export class NewsListComponent {
   newsList: any;
   constructor(private newsService: NewsService) {}
   ngOnInit(): void {
-    this.newsService.getNews().subscribe((data) => {
+    this.newsService.getAllNews().subscribe((data) => {
       this.newsList = data;
     });
   }

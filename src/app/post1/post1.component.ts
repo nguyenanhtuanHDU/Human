@@ -14,7 +14,7 @@ export class Post1Component {
   loadingStatus = '';
   constructor(private newsService: NewsService) {}
   ngOnInit(): void {
-    this.newsService.getNews().subscribe((data) => {
+    this.newsService.getAllNews().subscribe((data) => {
       if (Array.isArray(data)) {
         this.data = data[0];
         this.image = this.data.image;
